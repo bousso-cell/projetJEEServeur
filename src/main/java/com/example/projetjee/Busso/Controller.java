@@ -1,10 +1,7 @@
 package com.example.projetjee.Busso;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
@@ -31,4 +28,10 @@ public class Controller {
     {
         return typeMouvementRepositoryRepository.save(typMvt);
     }
+    /*
+    @DeleteMapping(value = "TypeMouvement/{codeTypeMvt}")
+    public void supprimerProduit(@PathVariable int codeTypeMvt) {
+
+        TypeMouvement.delete(codeTypeMvt);
+    }*/
 }
