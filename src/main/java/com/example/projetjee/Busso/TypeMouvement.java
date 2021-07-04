@@ -8,7 +8,7 @@ import javax.persistence.Id;
 @Entity
 public class TypeMouvement {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String codeTypeMvt;
+    private long codeTypeMvt;
     private String libelleTypeMvt;
     private long prixTypeMvt;
 
@@ -46,11 +46,11 @@ public class TypeMouvement {
         this.prixTypeMvt = prixTypeMvt;
     }
 
-    public void setCodeTypeMvt(String codeTypeMvt) {
+    public void setCodeTypeMvt(long codeTypeMvt) {
         this.codeTypeMvt = codeTypeMvt;
     }
 
-    public String getCodeTypeMvt() {
+    public long getCodeTypeMvt() {
         return codeTypeMvt;
     }
 }
