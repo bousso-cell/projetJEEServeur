@@ -27,7 +27,7 @@ public class Controller {
         return TypeMouvement;
     }
     @PostMapping(path="TypeMouvement")
-    public  TypeMouvement insertEtud(TypeMouvement typMvt)
+    public  TypeMouvement insertTypeMouvement(TypeMouvement typMvt)
     {
         return typeMouvementRepositoryRepository.save(typMvt);
     }
