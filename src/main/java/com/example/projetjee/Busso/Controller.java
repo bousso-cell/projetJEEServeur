@@ -18,8 +18,8 @@ public class Controller {
     public List<TypeMouvement> getTypeMouvement(){
         return typeMouvementRepositoryRepository.findAll();
     }
-    @GetMapping(path = "TypeMouvement")
-    public Optional<TypeMouvement> getTypeMouvement(@PathVariable Long codeTypeMvt ){
+    @GetMapping(path = "TypeMouvement/{codeTypeMvt}")
+    public Optional<TypeMouvement> getTypeMouvement(@PathVariable Long codeTypeMvt){
 
         Optional<TypeMouvement> TypeMouvement = typeMouvementRepositoryRepository.findById(codeTypeMvt);
 
